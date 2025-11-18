@@ -1,15 +1,15 @@
-flutter_dotted_border
+# flutter_dotted_border
 
 A lightweight Flutter package for adding rectangular and circular dotted borders around any widget.
 Supports custom dash count, colors, active/inactive segments, and flexible styling.
 
 ✨ Features
 
-✔ Add circular dotted borders with multiple colors (e.g., active vs inactive dashes)
-✔ Add rectangular dotted borders with options to exclude specific sides
-✔ Fully customizable: dash width, gap, stroke, colors, active count, etc.
-✔ Works with any widget and layout
-✔ Lightweight and does not rely on heavy dependencies
+- Add circular dotted borders with multiple colors (e.g., active vs inactive dashes)
+- Add rectangular dotted borders with options to exclude specific sides
+- Fully customizable: dash width, gap, stroke, colors, active count, etc.
+- Works with any widget and layout
+- Lightweight and does not rely on heavy dependencies
 
 📸 Screenshots
 
@@ -74,10 +74,10 @@ Contributions are welcome! PRs, bug reports, and suggestions help improve the pa
 
 Roadmap:
 
-Support rounded rectangular border
-Support gradients
-Support animated dash transitions
-Add more border shapes
+- Support rounded rectangular border
+- Support gradients
+- Support animated dash transitions
+- Add more border shapes
 
 ❤️ Support the Package
 
