@@ -3,6 +3,7 @@ description: "A lightweight customizable dotted border widget for Flutter."
 version: 0.0.1
 homepage: https://github.com/iamashish1/flutter_dotted_border/
 repository: https://github.com/iamashish1/flutter_dotted_border.git
+issue_tracker: https://github.com/iamashish1/flutter_dotted_border/issues
 environment:
   sdk: '>=3.0.0 <4.0.0'
   flutter: ">=3.0.0"
