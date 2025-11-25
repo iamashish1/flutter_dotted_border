@@ -30,12 +30,12 @@ class DottedCircularBorderByNumber extends CircularBorderType {
     this.inactiveColor = Colors.grey,
     this.strokeWidth = 2,
     this.dashGap = 5,
-  }) : assert(numberOfDashes > 0, 'numberOfDashes must be greater than 0.'),
-       assert(activeCount >= 0, 'activeCount cannot be negative.'),
-       assert(
-         activeCount <= numberOfDashes,
-         'activeCount cannot be greater than numberOfDashes.',
-       );
+  })  : assert(numberOfDashes > 0, 'numberOfDashes must be greater than 0.'),
+        assert(activeCount >= 0, 'activeCount cannot be negative.'),
+        assert(
+          activeCount <= numberOfDashes,
+          'activeCount cannot be greater than numberOfDashes.',
+        );
 
   @override
   void paint(Canvas canvas, Size size, Offset offset) {
@@ -51,19 +51,17 @@ class DottedCircularBorderByNumber extends CircularBorderType {
 
     final radius = rect.width / 2;
 
-    final activePaint =
-        Paint()
-          ..color = activeColor
-          ..strokeCap = StrokeCap.round
-          ..strokeWidth = strokeWidth
-          ..style = PaintingStyle.stroke;
+    final activePaint = Paint()
+      ..color = activeColor
+      ..strokeCap = StrokeCap.round
+      ..strokeWidth = strokeWidth
+      ..style = PaintingStyle.stroke;
 
-    final inactivePaint =
-        Paint()
-          ..color = inactiveColor
-          ..strokeCap = StrokeCap.round
-          ..strokeWidth = strokeWidth
-          ..style = PaintingStyle.stroke;
+    final inactivePaint = Paint()
+      ..color = inactiveColor
+      ..strokeCap = StrokeCap.round
+      ..strokeWidth = strokeWidth
+      ..style = PaintingStyle.stroke;
 
     // Convert pixel gap into angle gap
     double gapAngle = dashGap / radius;
@@ -108,12 +106,11 @@ class DefaultDottedCircularBorder extends CircularBorderType {
 
   @override
   void paint(Canvas canvas, Size size, Offset offset) {
-    final Paint paint =
-        Paint()
-          ..color = color
-          ..strokeWidth = strokeWidth
-          ..style = PaintingStyle.stroke
-          ..strokeCap = StrokeCap.round;
+    final Paint paint = Paint()
+      ..color = color
+      ..strokeWidth = strokeWidth
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round;
 
     final center = Offset(
       offset.dx + size.width / 2,

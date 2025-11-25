@@ -7,6 +7,7 @@ Supports custom dash count, colors, active/inactive segments, and flexible styli
 
 - Add circular dotted borders with multiple colors (e.g., active vs inactive dashes)
 - Add rectangular dotted borders with options to exclude specific sides
+- Add rounded rectangular border
 - Fully customizable: dash width, gap, stroke, colors, active count, etc.
 - Works with any widget and layout
 - Lightweight and does not rely on heavy dependencies
@@ -25,11 +26,12 @@ Feel free to use it in production, but be aware that APIs may evolve in upcoming
 Add the dependency:
 
 dependencies:
-  flutter_dotted_border: ^0.0.1
+flutter_dotted_border: ^0.0.2
 
 🧩 Usage
 
 Rectangular Dotted Border
+
 ```dart
 DottedBorder(
   borderType: RectDottedBorder(
@@ -63,6 +65,32 @@ DottedBorder(
 )
 ```
 
+Rounded Rectangular Border
+
+```dart
+DottedBorder(
+  borderType: RoundedRectDottedBorder(
+    color: Colors.blue,
+    dashGap: 4,
+    dashWidth: 4,
+    strokeWidth: 2,
+    radius: Radius.circular(10),
+  ),
+  child: Padding(
+    padding: EdgeInsets.all(5),
+    child: Container(
+      height: 70,
+      width: 70,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.amber,
+      ),
+    ),
+  ),
+)
+
+```
+
 📚 Additional Information
 
 Issues & feature requests:
@@ -74,7 +102,6 @@ Contributions are welcome! PRs, bug reports, and suggestions help improve the pa
 
 Roadmap:
 
-- Support rounded rectangular border
 - Support gradients
 - Support animated dash transitions
 - Add more border shapes

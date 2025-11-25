@@ -35,7 +35,7 @@ class DottedBorderRenderObject extends RenderProxyBox {
   BorderType _borderType;
 
   DottedBorderRenderObject({required BorderType borderType})
-    : _borderType = borderType;
+      : _borderType = borderType;
 
   set borderType(BorderType value) {
     if (value == _borderType) return;

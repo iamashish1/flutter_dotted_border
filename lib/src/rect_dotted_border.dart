@@ -29,11 +29,10 @@ class RectDottedBorder extends BorderType {
 
   @override
   void paint(Canvas canvas, Size size, Offset offset) {
-    final Paint paint =
-        Paint()
-          ..color = color
-          ..strokeWidth = strokeWidth
-          ..style = PaintingStyle.stroke;
+    final Paint paint = Paint()
+      ..color = color
+      ..strokeWidth = strokeWidth
+      ..style = PaintingStyle.stroke;
 
     final left = offset.dx;
     final top = offset.dy;

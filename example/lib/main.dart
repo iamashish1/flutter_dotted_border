@@ -5,7 +5,8 @@ import 'package:flutter_dotted_border/flutter_dotted_border.dart'
         DefaultDottedCircularBorder,
         DottedBorder,
         DottedCircularBorderByNumber,
-        RectDottedBorder;
+        RectDottedBorder,
+        RoundedRectDottedBorder;
 
 void main() {
   runApp(const MyApp());
@@ -113,6 +114,32 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Text("Example 4"),
+
+                SizedBox(height: 20),
+                Align(
+                  alignment: Alignment.center,
+                  child: DottedBorder(
+                    borderType: RoundedRectDottedBorder(
+                      color: Colors.blue,
+                      dashGap: 4,
+                      dashWidth: 4,
+                      strokeWidth: 2,
+                      radius: Radius.circular(10),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.all(5),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.amber,
+                        ),
+                        height: 70,
+                        width: 70,
+                      ),
+                    ),
+                  ),
+                ),
+                Text("Example 5"),
               ],
             ),
           ),
